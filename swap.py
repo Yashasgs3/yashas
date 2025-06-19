@@ -1,17 +1,18 @@
-def factorial(n):
-    if n < 0:
-        return "Factorial does not exist for negative numbers."
-    elif n == 0 or n == 1:
-        return 1
-    else:
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
+# Input: Two numbers
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
 
-# Get user input
-try:
-    number = int(input("Enter a number to find the factorial: "))
-    print(f"The factorial of {number} is {factorial(number)}")
-except ValueError:
-    print("Please enter a valid integer.")
+# Display values before swapping
+print("Before swapping:")
+print("First number:", num1)
+print("Second number:", num2)
+
+# Swapping the numbers using a temporary variable
+temp = num1
+num1 = num2
+num2 = temp
+
+# Display values after swapping
+print("After swapping:")
+print("First number:", num1)
+print("Second number:", num2)
