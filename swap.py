@@ -1,6 +1,6 @@
 # Input: Two numbers
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num1 =10
+num2 =20
 
 # Display values before swapping
 print("Before swapping:")
